@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro produto</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <style type="text/css">
+         body{
+            text-align: center;
+            font-family:'Franklin Gothic Medium';
+        }
+    </style>
+</head>
+<body>
+    <form name="formulario" method="post" action="produto.php" enctype="multipart/form-data">
+        <img src="./fotos/logoLoja.png" width=250 height=150 align ="center">
+        <h1>Cadastro Produtos</h1>
+        <br>
+        Codigo:<input type="text" name="codigo" id="codigo" size=10>
+        <br><br>
+        Descrição:<input type="text" name="descricao" id="descricao" size=30>
+        <br><br>
+        Cod Categoria:<input type="text" name="codcategoria" id="codcategoria" size=10>
+        <br><br>
+        Cod Classificação:<input type="text" name="codclassicacao" id="codclassicacao" size="10">
+        <br><br>
+        Cod Marca:<input type="text" name="codmarca" id="codmarca" size="30">
+        <br><br>
+        Cor:<input type="text" name="cor" id="cor" size="30">
+        <br><br>
+        Tamanho:<input type="text" name="tamanho" id="tamanho" size="30">
+        <br><br>
+        Preco:<input type="text" name="preco" id="preco" size="30">
+        <br><br>
+        <input type="file" name="foto1" id="foto1">
+        <br><br>
+        <input type="file" name="foto2" id="foto2">
+        <br><br>
+        <input type="file" name="foto3" id="foto3">
+        <br><br>
+        <input type="submit" name="gravar" value="gravar">
+        <input type="submit" name="excluir" value="excluir">
+        <input type="submit" name="alterar" value="alterar">
+        <input type="submit" name="pesquizar" value="pesquizar">
+        </form>
+</body>
+</html>
